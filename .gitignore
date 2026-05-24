@@ -1,69 +1,81 @@
-# Prerequisites
+# ==========================================
+# C++ & Build Artifacts
+# ==========================================
+# Prerequisites & Objects
 *.d
-
-# Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
+# Precompiled Headers & Debugger Files
 *.gch
 *.pch
-
-# Linker files
 *.ilk
-
-# Debugger Files
 *.pdb
+*.dwo
 
-# Compiled Dynamic libraries
+# Libraries & Executables
 *.so
 *.dylib
 *.dll
 *.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
 *.lib
-
-# Executables
 *.exe
 *.out
 *.app
 
-# Build directories
+# Build Directories
 build/
 Build/
 build-*/
+Testing/
+.cache/
 
-# CMake generated files
+# CMake & vcpkg
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 install_manifest.txt
 compile_commands.json
+vcpkg_installed/
 
-# Temporary files
+# ==========================================
+# CAD, Mesh & Simulation Tools
+# ==========================================
+# FreeCAD (Auto-backups & locks)
+*.FCBak
+*.FCStd1
+*.FCLock
+
+# Gmsh (Mesh output & options - Keep only .geo)
+*.msh
+*.pos
+*.opt
+
+# AWS Palace (Solver outputs & temporary directories)
+postpro/
+*.jed
+*.asms
+*.petsc
+/palace.json
+
+# ==========================================
+# Post-Processing & System Files
+# ==========================================
+# GNU Octave / MATLAB
+octave-workspace
+.octave_hist
+*.mat
+
+# System Temporary Files
 *.tmp
 *.log
 *.bak
 *.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
+.DS_Store
+Thumbs.db
