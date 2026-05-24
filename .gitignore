@@ -52,13 +52,11 @@ vcpkg_installed/
 *.FCStd1
 *.FCLock
 
-# Gmsh (Mesh output & options - Keep only .geo)
-*.msh
+# Gmsh 
 *.pos
 *.opt
 
 # AWS Palace (Solver outputs & temporary directories)
-postpro/
 *.jed
 *.asms
 *.petsc
