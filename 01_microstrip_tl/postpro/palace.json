@@ -1,0 +1,96 @@
+{
+  "ElapsedTime": {
+    "Counts": {
+      "Adaptation": 0,
+      "CoarseSolve": 0,
+      "Construction": 2,
+      "DiskIO": 3,
+      "Div.-FreeProjection": 0,
+      "EigenvalueSolve": 0,
+      "Estimation": 58,
+      "FarFields": 0,
+      "Gridfunction": 0,
+      "Initialization": 2,
+      "LinearSolve": 29,
+      "MeshPreprocessing": 1,
+      "OperatorConstruction": 1,
+      "PROMConstruction": 0,
+      "PROMSolve": 0,
+      "Paraview": 0,
+      "Postprocessing": 60,
+      "Preconditioner": 591,
+      "Rebalancing": 0,
+      "Setup": 29,
+      "Solve": 58,
+      "TimeStepping": 0,
+      "Total": 1,
+      "WavePorts": 0
+    },
+    "Durations": {
+      "Adaptation": 0.0,
+      "CoarseSolve": 0.0,
+      "Construction": 9.190649906,
+      "DiskIO": 1.797699148,
+      "Div.-FreeProjection": 0.0,
+      "EigenvalueSolve": 0.0,
+      "Estimation": 10.124726291000005,
+      "FarFields": 0.0,
+      "Gridfunction": 0.0,
+      "Initialization": 0.884244414,
+      "LinearSolve": 312.77311800900003,
+      "MeshPreprocessing": 5.220460664,
+      "OperatorConstruction": 4.818183974000002,
+      "PROMConstruction": 0.0,
+      "PROMSolve": 0.0,
+      "Paraview": 0.0,
+      "Postprocessing": 12.951363826000001,
+      "Preconditioner": 499.25905016299976,
+      "Rebalancing": 0.0,
+      "Setup": 155.286899922,
+      "Solve": 328.2178672029999,
+      "TimeStepping": 0.0,
+      "Total": 1340.559127379,
+      "WavePorts": 0.0
+    }
+  },
+  "Excitations": [
+    [
+      [
+        1,
+        {
+          "CurrentDipole": [],
+          "LumpedPort": [
+            1
+          ],
+          "SurfaceCurrent": [],
+          "WavePort": []
+        }
+      ]
+    ]
+  ],
+  "GitTag": "869ee5c",
+  "LinearSolver": {
+    "TotalIts": 533,
+    "TotalSolves": 29
+  },
+  "PeakMemoryMegabytes": {
+    "Average": 2221.25390625,
+    "Max": 2221.25390625,
+    "Min": 2221.25390625,
+    "Total": 2221.25390625
+  },
+  "PeakNodeMemoryMegabytes": {
+    "Average": 2221.25390625,
+    "Max": 2221.25390625,
+    "Min": 2221.25390625,
+    "Total": 2221.25390625
+  },
+  "Problem": {
+    "DegreesOfFreedom": 242699,
+    "MPISize": 1,
+    "MeshElements": 195178,
+    "MultigridDegreesOfFreedom": [
+      242699
+    ]
+  }
+}
