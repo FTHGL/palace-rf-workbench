@@ -1,0 +1,57 @@
+{
+  "Problem": {
+    "Type": "Driven",
+    "Verbose": 1,
+    "Output": "postpro"
+  },
+  "Model": {
+    "Mesh": "TL1.msh",
+    "L0": 0.001
+  },
+  "Domains": {
+    "Materials": [
+      {
+        "Attributes": [68],
+        "Permittivity": 4.4,
+        "LossTan": 0.02
+      },
+      {
+        "Attributes": [67],
+        "Permittivity": 1.0,
+        "LossTan": 0.0
+      }
+    ]
+  },
+  "Boundaries": {
+    "PEC": {
+      "Attributes": [69, 70]
+    },
+    "LumpedPort": [
+      {
+        "Index": 1,
+        "Attributes": [71],
+        "R": 50.0,
+        "Direction": "+Z",
+        "Excitation": true
+      },
+      {
+        "Index": 2,
+        "Attributes": [72],
+        "R": 50.0,
+        "Direction": "+Z"
+      }
+    ]
+  },
+  "Solver": {
+    "Order": 1,
+    "Driven": {
+      "MinFreq": 1.0, //Ghz
+      "MaxFreq": 15.0,
+      "FreqStep": 0.5
+    },
+    "Linear": {
+      "Type": "AMS",
+      "Tol": 1e-6
+    }
+  }
+}
